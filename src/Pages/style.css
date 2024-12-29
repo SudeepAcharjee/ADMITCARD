@@ -1,0 +1,76 @@
+@media print {
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    @page {
+      size: A4 landscape; /* Ensure correct orientation and size */
+      margin: 20mm; /* Margins around the page */
+    }
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+    }
+    .certificate {
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      position: relative;
+    }
+    .header {
+      position: absolute;
+      top: 50mm;
+      right: 5mm;
+    }
+    .header img {
+      width: 100px;
+    }
+    .content {
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: left;
+    }
+    .content table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .content th, .content td {
+      padding: 8px;
+      text-align: left;
+    }
+    .content th {
+      background-color: #f4f4f4;
+    }
+    .heading {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 0px;
+    }
+    .paragraph {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .note {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 30px;
+      font-style: italic;
+      color: #555;
+    }
+    .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
